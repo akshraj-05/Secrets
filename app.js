@@ -3,6 +3,7 @@ const bodyParser = require("body-parser");
 const ejs = require("ejs");
 const app = express();
 const mongoose = require("mongoose");
+const encrypt = require("mongoose-encryption");
 
 
 // setting views and static folder mostly this is frontend side connection
@@ -25,6 +26,9 @@ const userSchema = new Schema({
   email: String,
   password: String
 });
+
+const secret = "HeyThereIAmUsingWhatsapp.";
+userSchema.plugin(encrypt, { secret: secret, encryptedFields: ["password"] });
 
 //creating collection of schema
 const User = mongoose.model("User", userSchema);
@@ -61,6 +65,8 @@ app.route("/login")
         }
       }
     });
+
+
   });
 
 ///// register route ////
@@ -83,6 +89,7 @@ app.route("/register")
         res.render("secrets");
       }
     });
+
   });
 
 

@@ -1,7 +1,7 @@
 {
-  "name": "secrets",
+  "name": "Secrets",
   "version": "1.0.0",
-  "description": "**Authentication Level 1**\r  Level 1 - Username and Password Only",
+  "description": "",
   "main": "app.js",
   "dependencies": {
     "body-parser": "^1.18.3",
@@ -17,6 +17,6 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "Akshraj Chavda",
+  "author": "",
   "license": "ISC"
 }
