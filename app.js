@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
@@ -27,7 +28,7 @@ const userSchema = new Schema({
   password: String
 });
 
-const secret = "HeyThereIAmUsingWhatsapp.";
+const secret = process.env.SECRET;
 userSchema.plugin(encrypt, { secret: secret, encryptedFields: ["password"] });
 
 //creating collection of schema
