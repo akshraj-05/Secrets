@@ -1,0 +1,22 @@
+{
+  "name": "secrets",
+  "version": "1.0.0",
+  "description": "**Authentication Level 1**\r  Level 1 - Username and Password Only",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.2.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.5",
+    "mongoose-encryption": "^2.0.1",
+    "node-enigma": "^1.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Akshraj Chavda",
+  "license": "ISC"
+}
